@@ -1,0 +1,95 @@
+Learning python
+#Sustitución de valores en cadenas de carácteres
+puntos = 100
+mensaje = "se van a concatenar %s puntos"
+print(mensaje %puntos)
+se van a concatenar 100 puntos
+
+#Sustituyendo dos valores a la cadena
+
+>>> mensaje2 = "¿que tienen los %s y los %s en comun?"
+>>> print (mensaje2 %("perros","gatos"))
+¿que tienen los perros y los gatos en comun?
+
+#Listas en python
+>>> lista_del_mandado = ['manzanas','papel','chocolate','cafe']
+>>> print(lista_del_mandado[3])
+cafe
+>>> print(lista_del_mandado[0:3])
+['manzanas', 'papel', 'chocolate']
+
+ 
+# Agregar elementos a una lista con append('elemento')
+>>> lista_del_mandado.append('leche')
+>>> lista_del_mandado
+['manzanas', 'papel', 'chocolate', 'cafe', 'leche']
+
+#Insertar un elemento en determinada posición a la lista con insert(indice,'elemento')
+>>> lista_del_mandado
+['manzanas', 'royal', 'jabon', 'shampoo', 'papel', 'sugar']
+>>> lista_del_mandado.insert(2,'croquetas')
+>>> lista_del_mandado
+['manzanas', 'royal', 'croquetas', 'jabon', 'shampoo', 'papel', 'sugar']
+
+
+#Borrar elementos en una lista con del y pop('elemento')
+>>> del  lista_del_mandado[2]
+>>> lista_del_mandado
+['manzanas', 'papel', 'cafe', 'leche']
+>>> lista_del_mandado.pop(3) 
+'leche'
+#Si no se le asigna un indice al pop() borra el último elemento.
+
+#tuplas sus elementos no se pueden modificar y sus valores nunca cambian
+
+>>> otros_paises = ('cuba','argentina','brasil')
+>>> otros_paises[1]= 'china'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+#Con LEN se pueden calcular el numero de elementos de una lista,tupla o cadena
+#de caracteres.
+
+>>> len(otros_paises)
+3
+>>> len('cuba')
+4
+
+#Diccionarios o Mapas comienzan con {'clave':'valor','clave':'valor'}
+
+>> datos_personales = {'nombre':'Itzel','edad':'27','pais':'Mexico'}
+>>> datos_personales
+{'nombre': 'Itzel', 'edad': '27', 'pais': 'Mexico'}
+>>> datos_personales['nombre']
+'Itzel'
+#Modificar un valor en un diccionario
+>>> datos_personales['nombre']= 'itxhel'
+>>> datos_personales['nombre']
+'itxhel'
+
+#SETS -Conjuntos-
+
+>>> letras = set(['a','b','c','d','f'])
+>>> letras
+{'b', 'c', 'd', 'a', 'f'}
+>>> vocales = set  (['a','e','i','o','u'])
+>>> letras & vocales
+{'a'}
+>>> letras | vocales
+{'b', 'c', 'i', 'd', 'e', 'a', 'o', 'f', 'u'}
+>>> letras - vocales
+{'b', 'f', 'd', 'c'}
+>>> vocales - letras
+{'u', 'e', 'o', 'i'}
+>>> letas ^ vocales
+{'b', 'o', 'i', 'c', 'u', 'f', 'd', 'e'}
+>>> 
+
+#Funciones
+
+>>> def saludo():
+...      print('Hola')
+... 
+>>> saludo()
+Hola
+>>> 
