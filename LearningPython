@@ -4,6 +4,9 @@ puntos = 100
 mensaje = "se van a concatenar %s puntos"
 print(mensaje %puntos)
 se van a concatenar 100 puntos
+#input
+nombre = input("¿como te llamas?")
+print("Hola, ", nombre) 
 
 #Sustituyendo dos valores a la cadena
 
@@ -105,4 +108,78 @@ pop()
 #Borra elementos de una lista
 
 
-#Parámetross
+#Parámetros PENDING
+
+
+
+
+#CONDICIONES
+#IF & ELIF
+
+ahorros = 50
+#ahorros = input("¿Cuánto tienes ahorrado?")
+#print("Tienes ahorrado , ", ahorros)
+if ahorros > 300:
+    print('comprar xbox')
+elif ahorros > 100:
+    print('tienes ahorrado %s , Ya casi' %ahorros )
+elif ahorros > 200:
+    print('Ya puedes comprar el xbox')
+elif ahorros == 100:
+    print("solo tenemos %s" %ahorros )
+    print("sigue ahorrando más para el xbox")
+else:
+    print('Tenemos otra cantidad de dinero')
+
+#con OR, una de las dos condiciones dadas tiene que ser
+#verdadera
+dia = "Martes"
+if dia == "Lunes" or dia == "Martes":
+       print("Apenas es %s" %dia )
+# FOR
+#FOR nos permite ejecutar varias veces una sentencia, oun bloque de sentencias.
+# range sirve para crear un lista de números con secuencia
+for x in range(0,5):
+      print("Vamos a festejar")
+
+#También se pueden utlizar Listas
+>>> milista = ['Lunes','Martes','Miercoles','Jueves','Viernes']
+>>> for x in milista:
+...        print(x)
+... 
+Lunes
+Martes
+Miercoles
+Jueves
+Viernes
+
+#BUCLES
+#Con while, permite validar una condición, y si es verdadera la ejecuta,
+# si es falsa nohace nada:
+
+x=0
+y=0
+while x < 20 and y < 10:  #Primero evalua la codición
+    print(x,y)  #Una vez evaluada la condición, ejecuta el bloque
+    x= x + 1    # que sigue después de la sentencia while.
+    y= y + 2
+0 0
+1 2
+2 4
+3 6
+4 8  #Aqui regresa a ver si la ocndición es verdadera
+     # Como aqui ya no cumple la condición, ya no ejecuta el bloque.
+
+# Palabras reservadas: CONTINUE
+
+x=0
+y=0
+while x < 20 and y < 10:   # Revisa la condición, si la cumple contínua con el siguiente bloque.
+  if x == 2:               # Cuando cumpla esta condición, se ejecutara el bloque dentro de if 
+      x = x + 1
+      continue             # Una vez cumplida la condición, con continue python va al siguiente bloque
+    
+  print(x,y)
+  x= x + 1
+  y= y + 2
+
