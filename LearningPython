@@ -183,3 +183,17 @@ while x < 20 and y < 10:   # Revisa la condición, si la cumple contínua con el
   x= x + 1
   y= y + 2
 
+#CLASES Y HERENCIA
+
+class Persona():
+    def camina(self):
+        print('caminando')
+    def duerme(self):
+        print('durmiendo')
+    def come(self):
+        print('comiendo')
+
+class Hijo(Persona):
+    def camina(self):
+        print('Camina rapido')
+
