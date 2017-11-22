@@ -93,3 +93,16 @@ TypeError: 'tuple' object does not support item assignment
 >>> saludo()
 Hola
 >>> 
+
+
+#Funciones internas en python
+
+int() 
+# convierte una cadena de caracteres a un numero entero
+input()
+#Obtiene la información de un usuario para usarla después
+pop()
+#Borra elementos de una lista
+
+
+#Parámetross
