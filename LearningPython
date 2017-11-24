@@ -197,3 +197,14 @@ class Hijo(Persona):
     def camina(self):
         print('Camina rapido')
 
+
+
+#Manejo de archivos
+
+1)Abrir
+2)Leer o escribir
+3)Cerrar
+
+#Abrir archivos open() , nombre de archivo y W modo de escritura.
+
+archivo = open("nombre.txt","w")
