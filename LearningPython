@@ -142,6 +142,9 @@ if dia == "Lunes" or dia == "Martes":
 for x in range(0,5):
       print("Vamos a festejar")
 
+print(list(range(10)))
+
+
 #También se pueden utlizar Listas
 >>> milista = ['Lunes','Martes','Miercoles','Jueves','Viernes']
 >>> for x in milista:
@@ -208,3 +211,30 @@ class Hijo(Persona):
 #Abrir archivos open() , nombre de archivo y W modo de escritura.
 
 archivo = open("nombre.txt","w")
+
+# Readline y Readlines
+Leer una linea readline()
+
+print("\nUsando Readline\n")
+miArchivo = open("lista.txt")
+print(miArchivo.readline())
+print(miArchivo.readline())
+print(miArchivo.readline())
+miArchivo.close()
+
+#Readlines  - Lee varias lineas y tener todas las lineas en una lista.
+print("\nUsando ReadlineS\n")
+miArchivo = open("lista.txt")
+print(miArchivo.readlines())
+miArchivo.close()   
+
+#READ 
+el metodo read acepta un parametro para indicar cuantos parametros quieres leer-
+
+print("\nUsando Read\n")
+miArchivo = open("lista.txt")
+print(miArchivo.read(7))
+miArchivo.close()
+
+
+#Manejo de archivos  with, with es un manejador de contexto.
